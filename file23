@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+from transformers import  pipeline
+
+image_to_text = pipeline("image-to-text", model="yesidcanoc/image-captioning-swin-tiny-distilgpt2")
+
+# Provide path the image file
+caption = image_to_text("./COCO_val2014_000000457986.jpg")
+print(caption)
