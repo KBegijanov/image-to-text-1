@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from transformers import  pipeline
 
 image_to_text = pipeline("image-to-text", model="yesidcanoc/image-captioning-swin-tiny-distilgpt2")
